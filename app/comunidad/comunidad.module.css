@@ -1,0 +1,49 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-4xl) var(--space-lg);
+}
+
+.header {
+  margin-bottom: var(--space-3xl);
+  text-align: left;
+}
+
+.desc {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-top: var(--space-md);
+}
+
+.waysSection {
+  margin-bottom: var(--space-4xl);
+}
+
+.wayCard {
+  background-color: var(--bg-warm);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-xl);
+  height: 100%;
+}
+
+.wayTitle {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.wayDesc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.newsletterSection {
+  margin-top: var(--space-3xl);
+}

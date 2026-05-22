@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+  padding: var(--space-5xl) 0 var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, rgba(234, 160, 94, 0.05) 0%, rgba(253, 251, 247, 0) 70%);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.heroContainer {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.heroDesc {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2xl);
+  max-width: 680px;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Category Grid Section */
+.categoriesSection {
+  padding: var(--space-4xl) 0;
+  background-color: var(--bg-base);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.categoryCard {
+  background-color: var(--bg-warm);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-2xl);
+  height: 100%;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.categoryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(93, 88, 80, 0.04);
+  border-color: var(--border-medium);
+}
+
+.categoryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.categoryDesc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.organismoCard {
+  border-left: 3px solid var(--accent-amber);
+}
+
+.entornoCard {
+  border-left: 3px solid var(--accent-clay);
+}
+
+/* Recent Publications Section */
+.recentSection {
+  padding: var(--space-4xl) 0 var(--space-5xl);
+  background-color: var(--bg-base);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-3xl);
+  gap: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .sectionHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.headerLink {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-clay);
+  transition: color var(--transition-fast);
+}
+
+.headerLink:hover {
+  color: #b56c50;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  <!-- Horizon -->
+  <line x1="100" y1="450" x2="700" y2="450" stroke="#111111" stroke-width="4"/>
+  <!-- Rising Sun -->
+  <circle cx="400" cy="450" r="150" fill="#FF3B30" opacity="0.6">
+    <animate attributeName="cy" from="450" to="350" dur="5s" fill="freeze" />
+  </circle>
+  <circle cx="400" cy="450" r="100" fill="#FF9500" opacity="0.8">
+    <animate attributeName="cy" from="450" to="380" dur="5s" fill="freeze" />
+  </circle>
+  
+  <!-- Biological Signals -->
+  <path d="M400 200V100" stroke="#FFCC00" stroke-width="4" stroke-dasharray="10 10"/>
+  <text x="350" y="80" font-family="monospace" font-size="18" font-weight="bold">CORTEZ DE CORTISOL</text>
+  
+  <text x="120" y="480" font-family="monospace" font-size="14">INFRARROJO CERCANO (NIR)</text>
+  <text x="500" y="480" font-family="monospace" font-size="14">ROJO VISIBLE (660nm)</text>
+</svg>
