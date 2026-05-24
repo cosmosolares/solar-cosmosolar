@@ -1,10 +1,10 @@
 import { getAllArticles } from '@/lib/articles';
 
 export default function sitemap() {
-  const baseUrl = 'https://solar.com'; // Change to actual domain when deployed
+  const baseUrl = 'https://solar-cosmosolar.vercel.app';
 
-  // Base routes
-  const routes = ['', '/ciencia', '/tecnologia', '/nosotros', '/checkout'].map(
+  // Rutas estáticas reales del proyecto
+  const routes = ['', '/acerca', '/comunidad', '/entorno', '/organismo'].map(
     (route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),
@@ -13,11 +13,9 @@ export default function sitemap() {
     })
   );
 
-  // No product routes needed
-
-  // Dynamic articles
+  // Artículos dinámicos
   const articleRoutes = getAllArticles().map((article) => ({
-    url: `${baseUrl}/ciencia/${article.slug}`,
+    url: `${baseUrl}/articulos/${article.slug}`,
     lastModified: new Date(article.date),
     changeFrequency: 'yearly',
     priority: 0.7,
