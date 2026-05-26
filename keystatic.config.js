@@ -1,17 +1,7 @@
 import { config, collection, fields } from '@keystatic/core';
 
-const isDev = process.env.NODE_ENV === 'development';
-
 export default config({
-  storage: isDev
-    ? { kind: 'local' }
-    : {
-        kind: 'github',
-        repo: {
-          owner: 'cosmosolares',
-          name: 'solar-cosmosolar',
-        },
-      },
+  storage: { kind: 'local' },
 
   collections: {
     articulos: collection({
