@@ -36,23 +36,37 @@ ul, ol { list-style: none; }
 
 /* ─── CSS CUSTOM PROPERTIES ──────────────────────────────────────────────── */
 :root {
-  /* Warm Earthy Organic Palette & Textures */
-  --bg-base: #FBF9F4;       /* Warm Ivory Paper */
-  --bg-warm: #F4EFE6;       /* Aged Parchment Cream */
-  --bg-elevated: #EDE6D8;   /* Vintage Cardboard */
-  
-  --border-subtle: #E8DFCF; /* Aged grid lines */
-  --border-medium: #D0C2A8; /* Botanical engraving line */
-  --border-thick: 1px solid var(--border-medium);
+  /* ── OFFICIAL BRAND PALETTE ──────────────────────────────────────────────
+     Stone    #2B2F27  |  Moss   #55644A  |  Clay     #C47C5A
+     Sunlight #E2B574  |  Earth  #7A6652  |  Ivory    #F2EFE6
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-stone:    #2B2F27;
+  --color-moss:     #55644A;
+  --color-clay:     #C47C5A;
+  --color-sunlight: #E2B574;
+  --color-earth:    #7A6652;
+  --color-ivory:    #F2EFE6;
 
-  --accent-clay: #E75A3B;   /* Vibrant Terra Cotta (Ref 3 orange) */
-  --accent-amber: #F0A04B;  /* Sunbeam Amber */
-  --accent-forest: #2D3E33; /* Deep Engraving Ink Green */
-  
-  --text-primary: #1C1B19;   /* Charcoal Ink */
-  --text-secondary: #4E4A43; /* Muted Charcoal Ink */
-  --text-muted: #898070;     /* Paper shadow grey */
-  --text-inverse: #FBF9F4;
+  /* Backgrounds */
+  --bg-base:     #F2EFE6;   /* Ivory — main background */
+  --bg-warm:     #EAE5D8;   /* Slightly deeper ivory for cards */
+  --bg-elevated: #E0D9CA;   /* Aged parchment for elevated surfaces */
+
+  /* Borders */
+  --border-subtle: #D9D2C0;
+  --border-medium: #C5BAA0;
+  --border-thick:  1px solid var(--border-medium);
+
+  /* Accents — from brand palette */
+  --accent-clay:    #C47C5A;   /* Primary CTA / warm terracotta */
+  --accent-amber:   #E2B574;   /* Sunlight — secondary accent */
+  --accent-forest:  #55644A;   /* Moss green — dark accent */
+
+  /* Text */
+  --text-primary:   #2B2F27;   /* Stone — headings & body */
+  --text-secondary: #55644A;   /* Moss — secondary text */
+  --text-muted:     #7A6652;   /* Earth — captions, labels */
+  --text-inverse:   #F2EFE6;   /* Ivory — on dark backgrounds */
 
   /* Spacing */
   --space-xs: 0.25rem; --space-sm: 0.5rem; --space-md: 1rem;
@@ -65,7 +79,7 @@ ul, ol { list-style: none; }
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 20px;
-  
+
   /* Transitions */
   --transition-fast: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --transition-base: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -153,10 +167,10 @@ ul, ol { list-style: none; }
   border-color: var(--accent-clay);
 }
 .btn-primary:hover { 
-  background: #c54226; 
-  border-color: #c54226; 
+  background: #a8663f; 
+  border-color: #a8663f; 
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(231, 90, 59, 0.15);
+  box-shadow: 0 4px 12px rgba(196, 124, 90, 0.25);
 }
 
 .btn-secondary { 

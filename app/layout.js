@@ -1,12 +1,11 @@
-import { Lora, Inter } from 'next/font/google';
+import { Cinzel, Inter } from 'next/font/google';
 import './globals.css';
 
-const lora = Lora({
+const cinzel = Cinzel({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-serif',
   weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
 });
 
 const inter = Inter({
@@ -45,7 +44,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${lora.variable} ${inter.variable}`}>
+    <html lang="es" className={`${cinzel.variable} ${inter.variable}`}>
       <body>
         {children}
       </body>

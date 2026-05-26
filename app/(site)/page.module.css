@@ -48,14 +48,15 @@
 
 /* Ensure visibility of community button in hero */
 .heroActions .btn-secondary {
-  background: var(--bg-warm);
-  border-color: var(--accent-clay);
-  color: var(--text-primary);
+  background: rgba(242, 239, 230, 0.15);
+  border-color: #F2EFE6;
+  color: #F2EFE6;
+  backdrop-filter: blur(4px);
 }
 .heroActions .btn-secondary:hover {
-  background: var(--accent-clay);
-  color: var(--text-inverse);
-  border-color: var(--accent-clay);
+  background: #F2EFE6;
+  color: #2B2F27;
+  border-color: #F2EFE6;
 }
 
 /* Biometric visual container (Ref 1 and 2 style) */
