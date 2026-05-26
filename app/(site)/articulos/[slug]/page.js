@@ -5,6 +5,7 @@ import { ArrowLeft, BookOpen, Clock, Calendar } from 'lucide-react';
 import { getArticleBySlug, getAllArticles } from '@/lib/articles';
 import ArticleCard from '@/components/ArticleCard';
 import ScrollReveal from '@/components/ScrollReveal';
+import ArticleFooter from '@/components/ArticleFooter';
 import styles from './article.module.css';
 
 export async function generateMetadata({ params }) {
@@ -92,6 +93,10 @@ export default async function ArticlePage({ params }) {
             className="article-reader-container"
             dangerouslySetInnerHTML={{ __html: article.htmlContent }}
           />
+        </ScrollReveal>
+        
+        <ScrollReveal delay={2}>
+          <ArticleFooter />
         </ScrollReveal>
       </section>
 

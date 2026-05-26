@@ -1,7 +1,5 @@
 import { Lora, Inter } from 'next/font/google';
 import './globals.css';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -49,11 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${lora.variable} ${inter.variable}`}>
       <body>
-        <Navigation />
-        <main id="main">
-          {children}
-        </main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

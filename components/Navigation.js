@@ -33,7 +33,7 @@ export default function Navigation() {
       <nav className={styles.nav} id="main-nav">
         <div className={styles.navContainer}>
           <Link href="/" className={styles.logo}>
-            Cosmo Solar
+            <img src="/logo/logo.svg" alt="Cosmo Solar logo" className={styles.logoImg} />
           </Link>
 
           <div className={styles.desktopLinks}>

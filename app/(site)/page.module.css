@@ -1,0 +1,287 @@
+.hero {
+  position: relative;
+  padding: var(--space-4xl) 0 var(--space-3xl);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .heroGrid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 2;
+}
+
+.heroTitle {
+  margin: var(--space-sm) 0 var(--space-lg);
+  color: var(--text-primary);
+}
+
+.heroDesc {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2xl);
+  max-width: 620px;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Ensure visibility of community button in hero */
+.heroActions .btn-secondary {
+  background: var(--bg-warm);
+  border-color: var(--accent-clay);
+  color: var(--text-primary);
+}
+.heroActions .btn-secondary:hover {
+  background: var(--accent-clay);
+  color: var(--text-inverse);
+  border-color: var(--accent-clay);
+}
+
+/* Biometric visual container (Ref 1 and 2 style) */
+.heroVisual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1.05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.anatomyBg {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  opacity: 0.85;
+  transition: opacity var(--transition-base);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.anatomyBg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border-subtle);
+  background-image: 
+    linear-gradient(to right, rgba(93, 88, 80, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(93, 88, 80, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+/* Glassmorphism Biometric Overlays (Ref 1 Style) */
+.biometricOverlay1 {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 220px;
+  animation: float1 6s ease-in-out infinite;
+  z-index: 3;
+}
+
+.biometricOverlay2 {
+  position: absolute;
+  bottom: 8%;
+  left: -5%;
+  width: 240px;
+  animation: float2 7s ease-in-out infinite;
+  z-index: 3;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0px) rotate(1deg); }
+  50% { transform: translateY(-8px) rotate(-1deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0px) rotate(-0.5deg); }
+  50% { transform: translateY(8px) rotate(0.5deg); }
+}
+
+.bioHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(28, 27, 25, 0.08);
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.bioLabel {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.bioValueWrap {
+  margin: var(--space-sm) 0;
+}
+
+.bioValue {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.bioUnit {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+.bioCaption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin-top: var(--space-sm);
+}
+
+/* Category Grid Section */
+.categoriesSection {
+  position: relative;
+  padding: var(--space-4xl) 0;
+  background-color: var(--bg-base);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.categoryCard {
+  background-color: var(--bg-warm);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-2xl);
+  height: 100%;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.categoryCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--border-medium);
+}
+
+.categoryCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(28, 27, 25, 0.05);
+  border-color: var(--border-medium);
+}
+
+.categoryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.categoryDesc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+  max-width: 90%;
+}
+
+.organismoCard::before {
+  background: var(--accent-amber);
+}
+
+.entornoCard::before {
+  background: var(--accent-clay);
+}
+
+/* Decorative background circle inside card */
+.cardDecoCircle {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 140px;
+  height: 140px;
+  border: 1px stroke var(--border-subtle);
+  border-radius: 50%;
+  border: 1px dashed rgba(28, 27, 25, 0.05);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Recent Publications Section */
+.recentSection {
+  padding: var(--space-4xl) 0 var(--space-5xl);
+  background-color: var(--bg-base);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-3xl);
+  gap: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .sectionHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.headerLink {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-clay);
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.headerLink:hover {
+  color: #c54226;
+}
+
+/* Crosshairs decorations inside layouts */
+.chTopLeft { top: 12px; left: 12px; }
+.chTopRight { top: 12px; right: 12px; }
+.chBottomLeft { bottom: 12px; left: 12px; }
+.chBottomRight { bottom: 12px; right: 12px; }
