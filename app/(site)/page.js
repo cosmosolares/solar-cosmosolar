@@ -104,22 +104,24 @@ export default function HomePage() {
               </ScrollReveal>
             </div>
 
-            {/* Columna Visual: Anatomía + Gráficos Flotantes (Ref 1 y 2) */}
+            {/* Columna Visual: Video Amanecer + Gráficos Flotantes */}
             <div className={styles.heroVisual}>
               
-              {/* Ilustración de Anatomía de Fondo (Ref 2) */}
-              <div className={styles.anatomyBg}>
-                <Image
-                  src="/images/anatomy-human-clean.png"
-                  alt="Esquema anatómico humano"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 500px"
-                  style={{ objectFit: 'contain', padding: '20px' }}
-                  priority
-                />
+              {/* Video del sol con montaña */}
+              <div className={styles.sunriseBg}>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className={styles.sunriseVideo}
+                >
+                  <source src="/videos/sunrise.mp4" type="video/mp4" />
+                </video>
+                <div className={styles.sunriseOverlay} />
               </div>
 
-              {/* Panel de Datos 1: Vitamina D (Ref 1) */}
+              {/* Panel de Datos 1: Vitamina D */}
               <div className={`${styles.biometricOverlay1} glass-panel`}>
                 <div className={styles.bioHeader}>
                   <span className={styles.bioLabel}>VITAMINA D / SÍNTESIS</span>
@@ -133,7 +135,7 @@ export default function HomePage() {
                 <p className={styles.bioCaption}>La luz UV-B del mediodía solar estimula la cascada hormonal.</p>
               </div>
 
-              {/* Panel de Datos 2: Espectro Luz (Ref 1) */}
+              {/* Panel de Datos 2: Espectro Luz */}
               <div className={`${styles.biometricOverlay2} glass-panel`}>
                 <div className={styles.bioHeader}>
                   <span className={styles.bioLabel}>LUMINOSIDAD / INFRARED</span>
