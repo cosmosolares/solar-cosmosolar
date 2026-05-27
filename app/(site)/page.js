@@ -66,91 +66,61 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ═══ HERO / DECLARATION OF INTENT (Estructura de Diagrama Técnico) ═══ */}
-      <section className={`${styles.hero} diagram-grid`} id="hero-section">
-        <Crosshairs />
+      {/* ═══ HERO / DECLARATION OF INTENT (Estructura de Fondo Completo) ═══ */}
+      <section className={styles.hero} id="hero-section">
+        {/* Video del sol con montaña en pantalla completa */}
+        <div className={styles.heroBg}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={styles.sunriseVideo}
+          >
+            <source src="/videos/sunrise.mp4" type="video/mp4" />
+          </video>
+          <div className={styles.sunriseOverlay} />
+        </div>
+
+        {/* Cuadrícula técnica en blanco */}
+        <div className={styles.heroGridOverlay} />
+
+        {/* Cruces de precisión en blanco */}
+        <div className={`${styles.chWhite} ${styles.chTopLeft}`} />
+        <div className={`${styles.chWhite} ${styles.chTopRight}`} />
+        <div className={`${styles.chWhite} ${styles.chBottomLeft}`} />
+        <div className={`${styles.chWhite} ${styles.chBottomRight}`} />
+
         <div className="container">
-          <div className={styles.heroGrid}>
+          <div className={styles.heroContent}>
+            <ScrollReveal delay={1}>
+              <span className={`${styles.heroLabel} label`}>
+                <SunburstIcon size={14} /> Comunidad & Laboratorio Abierto
+              </span>
+            </ScrollReveal>
             
-            {/* Columna de Texto Editorial */}
-            <div className={styles.heroText}>
-              <ScrollReveal delay={1}>
-                <span className="label">
-                  <SunburstIcon size={14} /> Comunidad & Laboratorio Abierto
-                </span>
-              </ScrollReveal>
-              
-              <ScrollReveal delay={2}>
-                <h1 className={`${styles.heroTitle} display-xl`}>
-                  El entorno moldea nuestra salud.
-                </h1>
-              </ScrollReveal>
+            <ScrollReveal delay={2}>
+              <h1 className={`${styles.heroTitle} display-xl`}>
+                El entorno moldea nuestra salud.
+              </h1>
+            </ScrollReveal>
 
-              <ScrollReveal delay={3}>
-                <p className={styles.heroDesc}>
-                  No creemos en los hacks rápidos ni en el bienestar performático. Cosmo Solar es un espacio de experimentación colectiva, ciencia abierta y diseño de vida cotidiana. Investigamos cómo los ritmos circadianos, la luz natural, el contacto directo con la tierra y el hábitat moderno determinan nuestra biología profunda.
-                </p>
-              </ScrollReveal>
+            <ScrollReveal delay={3}>
+              <p className={styles.heroDesc}>
+                No creemos en los hacks rápidos ni en el bienestar performático. Cosmo Solar es un espacio de experimentación colectiva, ciencia abierta y diseño de vida cotidiana. Investigamos cómo los ritmos circadianos, la luz natural, el contacto directo con la tierra y el hábitat moderno determinan nuestra biología profunda.
+              </p>
+            </ScrollReveal>
 
-              <ScrollReveal delay={4}>
-                <div className={styles.heroActions}>
-                  <Link href="/acerca" className="btn btn-primary">
-                    Leer la Tesis
-                  </Link>
-                  <Link href="/comunidad" className="btn btn-secondary">
-                    Sumarse a la Comunidad
-                  </Link>
-                </div>
-              </ScrollReveal>
-            </div>
-
-            {/* Columna Visual: Video Amanecer + Gráficos Flotantes */}
-            <div className={styles.heroVisual}>
-              
-              {/* Video del sol con montaña */}
-              <div className={styles.sunriseBg}>
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className={styles.sunriseVideo}
-                >
-                  <source src="/videos/sunrise.mp4" type="video/mp4" />
-                </video>
-                <div className={styles.sunriseOverlay} />
+            <ScrollReveal delay={4}>
+              <div className={styles.heroActions}>
+                <Link href="/acerca" className="btn btn-primary">
+                  Leer la Tesis
+                </Link>
+                <Link href="/comunidad" className="btn btn-secondary">
+                  Sumarse a la Comunidad
+                </Link>
               </div>
-
-              {/* Panel de Datos 1: Vitamina D */}
-              <div className={`${styles.biometricOverlay1} glass-panel`}>
-                <div className={styles.bioHeader}>
-                  <span className={styles.bioLabel}>VITAMINA D / SÍNTESIS</span>
-                  <SunburstIcon size={10} style={{ color: 'var(--accent-amber)' }} />
-                </div>
-                <div className={styles.bioValueWrap}>
-                  <span className={styles.bioValue}>24</span>
-                  <span className={styles.bioUnit}>ng/dL</span>
-                </div>
-                <BiometricChart1 />
-                <p className={styles.bioCaption}>La luz UV-B del mediodía solar estimula la cascada hormonal.</p>
-              </div>
-
-              {/* Panel de Datos 2: Espectro Luz */}
-              <div className={`${styles.biometricOverlay2} glass-panel`}>
-                <div className={styles.bioHeader}>
-                  <span className={styles.bioLabel}>LUMINOSIDAD / INFRARED</span>
-                  <span style={{ fontSize: '7px', color: 'var(--text-muted)' }}>CH.01</span>
-                </div>
-                <div className={styles.bioValueWrap}>
-                  <span className={styles.bioValue}>810</span>
-                  <span className={styles.bioUnit}>nm</span>
-                </div>
-                <BiometricChart2 />
-                <p className={styles.bioCaption}>La radiación del amanecer repara y prepara el tejido celular.</p>
-              </div>
-
-            </div>
-
+            </ScrollReveal>
           </div>
         </div>
       </section>
