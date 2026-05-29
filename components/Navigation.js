@@ -24,7 +24,7 @@ export default function Navigation() {
   const navLinks = [
     { href: '/organismo', label: 'Organismo' },
     { href: '/entorno', label: 'Entorno' },
-    { href: '/acerca', label: 'Acerca' },
+    { href: '/acerca', label: 'Manifiesto' },
     { href: '/comunidad', label: 'Comunidad' },
   ];
 

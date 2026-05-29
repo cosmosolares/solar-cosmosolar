@@ -159,7 +159,7 @@
   text-transform: none;
 }
 
-/* ─── PILLARS (Organismo / Entorno) ─────────────────────── */
+/* ─── PILLARS (Organismo / Entorno) — links ─────────────── */
 .pillars {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -174,10 +174,23 @@
 }
 
 .pillar {
+  display: block;
   padding: var(--space-lg);
   border: 1px solid var(--border-subtle);
   border-radius: var(--border-radius-md);
   background-color: var(--bg-warm);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.pillar:hover {
+  border-color: var(--accent-clay);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(43, 47, 39, 0.08);
 }
 
 .pillarLabel {
@@ -189,6 +202,11 @@
   text-transform: uppercase;
   color: var(--accent-clay);
   margin-bottom: var(--space-sm);
+  transition: color var(--transition-fast);
+}
+
+.pillar:hover .pillarLabel {
+  color: var(--accent-forest);
 }
 
 .pillar p {
