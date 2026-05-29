@@ -2,14 +2,14 @@ import { Cinzel, Inter } from 'next/font/google';
 import './globals.css';
 
 const cinzel = Cinzel({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
   variable: '--font-serif',
   weight: ['400', '500', '600', '700'],
 });
 
 const inter = Inter({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
   variable: '--font-sans',
   weight: ['400', '500', '600', '700'],
