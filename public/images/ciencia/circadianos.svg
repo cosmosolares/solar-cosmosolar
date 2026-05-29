@@ -1,0 +1,22 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  <!-- Clock Circle -->
+  <circle cx="400" cy="300" r="200" stroke="#111111" stroke-width="4" fill="white"/>
+  <!-- Split -->
+  <path d="M400 100V500" stroke="#111111" stroke-width="2" stroke-dasharray="10 10"/>
+  <!-- Sun side -->
+  <circle cx="400" cy="300" r="80" fill="#FFCC00" opacity="0.2"/>
+  <circle cx="400" cy="200" r="30" fill="#FFCC00"/>
+  <text x="450" y="210" font-family="monospace" font-size="20" font-weight="bold">DÍA</text>
+  <!-- Moon side -->
+  <circle cx="400" cy="400" r="30" fill="#AF52DE"/>
+  <text x="300" y="410" font-family="monospace" font-size="20" font-weight="bold">NOCHE</text>
+  
+  <!-- Pineal -->
+  <circle cx="400" cy="300" r="10" fill="#111111"/>
+  <text x="420" y="305" font-family="monospace" font-size="12">NÚCLEO SUPRAQUIASMÁTICO</text>
+  
+  <!-- 24h markings -->
+  <text x="390" y="90" font-family="monospace" font-size="16">12:00</text>
+  <text x="390" y="530" font-family="monospace" font-size="16">00:00</text>
+</svg>

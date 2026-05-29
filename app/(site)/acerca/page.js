@@ -15,8 +15,8 @@ export default function AcercaPage() {
       <header className={styles.hero} id="acerca-hero">
         <div className={styles.heroBg}>
           <img
-            src="/images/forest.jpg"
-            alt="Bosque de pinos al amanecer"
+            src="/images/sunset.png"
+            alt="Atardecer majestuoso"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay} />

@@ -1,0 +1,15 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  
+  <!-- Grounding connection -->
+  <line x1="200" y1="400" x2="600" y2="400" stroke="#111111" stroke-width="4"/>
+  <line x1="250" y1="430" x2="550" y2="430" stroke="#111111" stroke-width="4"/>
+  <line x1="300" y1="460" x2="500" y2="460" stroke="#111111" stroke-width="4"/>
+  <line x1="350" y1="490" x2="450" y2="490" stroke="#111111" stroke-width="4"/>
+  <line x1="400" y1="400" x2="400" y2="150" stroke="#111111" stroke-width="4" stroke-dasharray="10 10"/>
+  
+  <circle cx="400" cy="150" r="40" fill="#FF9500"/>
+  
+  <text x="100" y="100" font-family="monospace" font-size="18" font-weight="bold">INTERCAMBIO ELÉCTRICO</text>
+  <text x="100" y="550" font-family="monospace" font-size="14" fill="#666">REDUCCIÓN DE ESTRÉS OXIDATIVO</text>
+</svg>

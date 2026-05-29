@@ -1,0 +1,16 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  
+  <!-- Biomechanics / Dynamic movement -->
+  <path d="M200 400 Q 300 100 400 300 T 600 200" stroke="#111111" stroke-width="4" fill="none"/>
+  <circle cx="200" cy="400" r="10" fill="#FF9500"/>
+  <circle cx="400" cy="300" r="15" fill="#34C759"/>
+  <circle cx="600" cy="200" r="10" fill="#007AFF"/>
+  
+  <!-- Force vectors -->
+  <line x1="400" y1="300" x2="450" y2="250" stroke="#FF3B30" stroke-width="3" stroke-dasharray="4 4"/>
+  <polygon points="450,250 440,250 450,260" fill="#FF3B30"/>
+  
+  <text x="100" y="100" font-family="monospace" font-size="18" font-weight="bold">BIOMECÁNICA EVOLUTIVA</text>
+  <text x="100" y="520" font-family="monospace" font-size="14" fill="#666">RANGOS DE MOVIMIENTO</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  <!-- Moon / Sleep Cycle -->
+  <circle cx="400" cy="300" r="150" fill="#1A1A24"/>
+  <circle cx="450" cy="250" r="120" fill="#F9F9F9"/>
+  
+  <path d="M400 100V500" stroke="#111111" stroke-width="2" stroke-dasharray="8 8"/>
+  <path d="M100 300H700" stroke="#111111" stroke-width="2" stroke-dasharray="8 8"/>
+  
+  <text x="120" y="280" font-family="monospace" font-size="14" fill="#666">SWS (SLOW WAVE SLEEP)</text>
+  <text x="420" y="520" font-family="monospace" font-size="14" fill="#666">REM</text>
+  <text x="320" y="80" font-family="monospace" font-size="18" font-weight="bold">ARQUITECTURA DEL SUEÑO</text>
+</svg>

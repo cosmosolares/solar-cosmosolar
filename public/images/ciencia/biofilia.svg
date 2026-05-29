@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  
+  <!-- Architecture -->
+  <rect x="250" y="150" width="300" height="300" stroke="#111111" stroke-width="3" fill="none"/>
+  <rect x="300" y="200" width="200" height="200" stroke="#111111" stroke-width="1" fill="none" stroke-dasharray="5 5"/>
+  
+  <!-- Organic Element -->
+  <path d="M400 450 C300 350, 350 250, 400 150 C450 250, 500 350, 400 450 Z" fill="#34C759" opacity="0.6"/>
+  
+  <text x="100" y="100" font-family="monospace" font-size="18" font-weight="bold">DISEÑO BIOFÍLICO</text>
+  <text x="100" y="520" font-family="monospace" font-size="14" fill="#666">INTEGRACIÓN GEOMETRÍA-NATURALEZA</text>
+</svg>

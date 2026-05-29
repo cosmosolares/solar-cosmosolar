@@ -1,0 +1,15 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  
+  <!-- Particles and Wind -->
+  <path d="M200 200 C300 100, 500 300, 600 200" stroke="#34C759" stroke-width="4" fill="none" opacity="0.6"/>
+  <path d="M200 300 C350 200, 450 400, 600 300" stroke="#34C759" stroke-width="4" fill="none" opacity="0.4"/>
+  <path d="M200 400 C400 300, 400 500, 600 400" stroke="#34C759" stroke-width="4" fill="none" opacity="0.2"/>
+  
+  <circle cx="300" cy="180" r="10" fill="#111111"/>
+  <circle cx="450" cy="350" r="15" fill="#111111"/>
+  <circle cx="550" cy="220" r="8" fill="#111111"/>
+  
+  <text x="100" y="100" font-family="monospace" font-size="18" font-weight="bold">FLUJO Y PARTÍCULAS</text>
+  <text x="100" y="140" font-family="monospace" font-size="14" fill="#666">VOCs / PM2.5 / CO2</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  <!-- Prism -->
+  <path d="M400 150L250 450H550L400 150Z" stroke="#111111" stroke-width="4" fill="white"/>
+  <!-- Incoming Light -->
+  <line x1="0" y1="300" x2="325" y2="300" stroke="#111111" stroke-width="6"/>
+  <text x="50" y="280" font-family="monospace" font-size="20" font-weight="bold">LUZ SOLAR</text>
+  <!-- Dispersion -->
+  <path d="M400 300L700 150" stroke="#FF3B30" stroke-width="8" opacity="0.8"/>
+  <path d="M400 300L700 210" stroke="#FF9500" stroke-width="8" opacity="0.8"/>
+  <path d="M400 300L700 270" stroke="#FFCC00" stroke-width="8" opacity="0.8"/>
+  <path d="M400 300L700 330" stroke="#34C759" stroke-width="8" opacity="0.8"/>
+  <path d="M400 300L700 390" stroke="#007AFF" stroke-width="8" opacity="0.8"/>
+  <path d="M400 300L700 450" stroke="#AF52DE" stroke-width="8" opacity="0.8"/>
+  
+  <text x="710" y="155" font-family="monospace" font-size="14">ROJO (NIR)</text>
+  <text x="710" y="455" font-family="monospace" font-size="14">VIOLETA (UV)</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  
+  <!-- Microbiome Nodes -->
+  <circle cx="400" cy="300" r="160" stroke="#111111" stroke-width="2" fill="none" stroke-dasharray="8 8"/>
+  
+  <circle cx="400" cy="300" r="40" fill="#FF9500" opacity="0.9"/>
+  <circle cx="280" cy="220" r="30" fill="#34C759" opacity="0.8"/>
+  <circle cx="520" cy="220" r="25" fill="#007AFF" opacity="0.8"/>
+  <circle cx="280" cy="380" r="35" fill="#5856D6" opacity="0.8"/>
+  <circle cx="520" cy="380" r="20" fill="#FF3B30" opacity="0.8"/>
+  
+  <!-- Connections -->
+  <line x1="400" y1="300" x2="280" y2="220" stroke="#111111" stroke-width="1" opacity="0.5"/>
+  <line x1="400" y1="300" x2="520" y2="220" stroke="#111111" stroke-width="1" opacity="0.5"/>
+  <line x1="400" y1="300" x2="280" y2="380" stroke="#111111" stroke-width="1" opacity="0.5"/>
+  <line x1="400" y1="300" x2="520" y2="380" stroke="#111111" stroke-width="1" opacity="0.5"/>
+  <line x1="280" y1="220" x2="520" y2="220" stroke="#111111" stroke-width="1" opacity="0.5"/>
+  
+  <text x="100" y="100" font-family="monospace" font-size="18" font-weight="bold">ECOSISTEMA INTERNO</text>
+  <text x="100" y="520" font-family="monospace" font-size="14" fill="#666">SIMBIOSIS</text>
+</svg>
