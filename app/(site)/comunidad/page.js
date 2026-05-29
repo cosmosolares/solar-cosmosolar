@@ -36,17 +36,19 @@ export default function ComunidadPage() {
                 Laboratorio Abierto
               </h1>
             </ScrollReveal>
-            <ScrollReveal delay={3}>
-              <p className={styles.heroDesc}>
-                Creemos que la ciencia y las prácticas de salud no deben quedar encerradas en laboratorios formales ni privatizadas por marcas de suplementos. La salud biológica se experimenta e implementa en el día a día.
-              </p>
-            </ScrollReveal>
           </div>
         </div>
       </header>
 
-      {/* ─── HOW TO PARTICIPATE ─── */}
+      {/* ─── CONTENT ─── */}
       <div className={styles.contentContainer}>
+
+        <ScrollReveal delay={1}>
+          <p className={styles.intro}>
+            Creemos que la ciencia y las prácticas de salud no deben quedar encerradas en laboratorios formales ni privatizadas por marcas de suplementos. La salud biológica se experimenta e implementa en el día a día.
+          </p>
+        </ScrollReveal>
+
         <section className={styles.waysSection}>
           <div className="grid-2">
             
@@ -71,7 +73,6 @@ export default function ComunidadPage() {
           </div>
         </section>
 
-        {/* ─── NEWSLETTER SIGNUP EMBED ─── */}
         <section className={styles.newsletterSection}>
           <ScrollReveal delay={1}>
             <NewsletterForm />
